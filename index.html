@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Assignment1_Form</title>
+</head>
+<body>
+    
+    <h2 class="padding-20">HTML FORM INPUTS</h2>
+   
+    <div class="container">
+       
+        <div class="form-container">
+            <form action="#">
+                <h1 class="padding-20">Create Account</h1> 
+                
+                <fieldset>
+                    <legend>Enter Crendentials:</legend>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <input type="tel" placeholder="Your Mobile No">
+                    <input type="url" placeholder="Your Portfolio Url">
+                </fieldset>
+                
+                <fieldset  data-role="controlgroup">
+                    <legend>Choose a Role:</legend>
+                         <input class="width-auto" type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+                         <label for="radio-choice-1">FrontEnd Developer</label>
+                         <input class="width-auto" type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+                         <label for="radio-choice-4">BackEnd Developer</label>
+                </fieldset>
+                <fieldset  data-role="controlgroup">
+                    <legend>Years Of Experience:</legend>
+                    <input type="number" placeholder="Your Experience ">
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend>Choose a Technology For FrontEnd:</legend>
+                    <input class="width-auto" type="checkbox" id="tech1" name="tech1" value="React">
+                    <label for="tech1">React</label>
+                    <input class="width-auto" type="checkbox" id="tech2" name="tech2" value="Angualar">
+                    <label for="tech2"> Angular</label>
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Enter your Date Of Birth :</legend>
+                    <input type="date">
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Enter your Favourite Color :</legend>
+                    <input type="color">
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Preferred Month,Week,Time To Contact You</legend>
+                    <input type="month">
+                    <input type="week">
+                    <input type="time">
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Preferred Range Of Fees:1000 to 10000</legend> 
+                    <input type="range" name="feeInputName" id="feeInputId" value="1000" min="1000" max="10000" oninput="feeOutputId.value = feeInputId.value">
+                    <output name="feeOutputName" id="feeOutputId">1000</output>
+                </fieldset>
+                
+                <input type="button" value="Sign Up" class="button buttmargin-10">
+            </form>
+        </div>
+
+        <div class="side-container">
+           <div class="side-panel">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+           </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
